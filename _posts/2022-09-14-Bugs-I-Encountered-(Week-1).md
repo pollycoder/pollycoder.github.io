@@ -8,8 +8,6 @@ math: true
 mermaid: true
 ---
 
-<p></p>
-
 <mark><big><font color=red>Four steps when you build and run your code:</font></big></mark>
 
 <mark><big><font color=red>1. Pre-processing</font></big></mark>
