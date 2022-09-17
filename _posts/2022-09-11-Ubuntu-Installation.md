@@ -10,7 +10,7 @@ mermaid: true
 
 # Some bugs you are going to encounter
 
-<p>https://www.youtube.com/watch?v=fAiF1PNlQ50</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fAiF1PNlQ50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 (<font color=red>Thanks for Danny Wu's image on his blog:https://www.idannywu.com//1203.html?preview=true</font>)
 
