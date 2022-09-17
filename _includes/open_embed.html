@@ -92,5 +92,20 @@
         }
     }
     mp3_embed();
+
+    function mp4_embed() {
+        var p = document.getElementsByTagName('p');
+        for (var i = 0; i < p.length; i++) {
+            if (p[i].innerHTML.indexOf('.mp4') !== -1) {
+                var mp4 = p[i].innerHTML.split('?');
+                var mp4url = mp4[0];
+                var mp4par = "controls"
+                var newInnerHTML = `<video ${mp4par} style="width:100%; height:100%; object-fit: fill;"> <source src="${mp4url}" type="video/mp4"> Your browser does not support the video tag. </video>`;
+                p[i].innerHTML = newInnerHTML;
+
+            }
+        }
+    }
+    mp4_embed();
     </script>
     
