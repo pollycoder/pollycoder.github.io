@@ -10,7 +10,7 @@ mermaid: true
 
 # Some bugs you are going to encounter
 
-
+<p>https://www.youtube.com/watch?v=fAiF1PNlQ50</p>
 
 (<font color=red>Thanks for Danny Wu's image on his blog:https://www.idannywu.com//1203.html?preview=true</font>)
 
