@@ -1,0 +1,30 @@
+I"�<h1 id="brief-introduction-of-agile">Brief introduction of Agile</h1>
+
+<h2 id="1-debugging-upper-computer--lower-computer">1. Debugging: Upper computer + Lower computer</h2>
+
+<p>(1)Check the controller program (on IPC), make sure it’s working well.</p>
+
+<p>(2)Check the circuit is working, in case it’s aging or breaking.</p>
+
+<p>(3)Read the documentation of previous work.</p>
+
+<p><big><font color="red">This step is mainly for getting familiar with the project and making sure previous work is running well.</font></big></p>
+
+<h2 id="2-camera-and-laser-radarnot-done-yet">2. Camera and laser radar(Not done yet)</h2>
+
+<p>This work is mainly on upper computer.</p>
+
+<p>These two components are mainly used to detect the traffic status (image processing)</p>
+
+<h2 id="3-start-new-research">3. Start new research</h2>
+
+<h3 id="some-possible-titles">Some possible titles:</h3>
+
+<p>Control algorithm</p>
+
+<p>Automatic driving</p>
+
+<p>…</p>
+
+<p>Discuss with tutor later.</p>
+:ET
