@@ -20,7 +20,7 @@ If you want to learn ROS by yourself, you can go to <a href="http://wiki.ros.org
 
 ## Part 2 Installation
 
-> Tips: In this essay, we recommend Ubuntu 20.04, because this is the latest version compatible with both ROS 1 and 2. Even though we do not use ROS 2 here,  since ROS 1 has already stopped updating, we are almost sure that ROS 2 might replace ROS 1 in the future.
+> In this essay, we recommend Ubuntu 20.04, because this is the latest version compatible with both ROS 1 and 2. Even though we do not use ROS 2 here,  since ROS 1 has already stopped updating, we are almost sure that ROS 2 might replace ROS 1 in the future.
 {: .prompt-tip }
 
 ### Step 1: Choose your ROS version
@@ -53,8 +53,7 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 ```
 
-> Warning:
-Don't just copy the command from ros wiki, because the command provided didn't provide the  pubkey, if you cmd 
+> Don't just copy the command from ros wiki, because the command provided didn't provide the  pubkey, if you cmd 
 c+v unquestioningly, you may see an error report like this when you try the next step:
 ![ros_installation_error_key](https://raw.githubusercontent.com/pollycoder/blog_image/main/ros/ros_installation_error_key.jpeg)
 {: .prompt-danger }
@@ -73,7 +72,7 @@ Here we recommend `Desktop-full Install`, because the features in this version a
 sudo apt install ros-noetic-desktop-full
 ```
 
-> p.s. If you want to install more other packages ROS doesn't have, use the following command:
+> If you want to install more other packages ROS doesn't have, use the following command:
 {: .prompt-info }
 ```shell
 sudo apt install ros-noetic-PACKAGE # Replace PACKAGE with target package name
@@ -106,8 +105,7 @@ sudo rosdep init
 rosdep update
 ```
 
-> Warning:
-Some times you may get an error report like this:
+> Some times you may get an error report like this:
 ![ros_installation_error_rosdep_init](https://raw.githubusercontent.com/pollycoder/blog_image/main/ros/ros_installation_error_rosdep_init.png)
 {: .prompt.warning }
 
@@ -124,7 +122,7 @@ If it can't work, please check your network status. If it works,  go to the nex
 
 2. Find ip address of the domain:
 
-> Tips: Here we recommend <a href="https://www.ipaddress.com/">ipaddress.com</a>, which is useful when looking up the ip address of one URL.
+> Here we recommend <a href="https://www.ipaddress.com/">ipaddress.com</a>, which is useful when looking up the ip address of one URL.
 As for `raw.githubusercontent.com`, here are several common ip addresses:
 - 185.199.108.133
 - 185.199.109.133
@@ -135,11 +133,11 @@ The tip is just my experience, the ip may change sometimes, anyway, the core tas
 
 3. Retry step 1. If it doesn't work,  you may need to complete the process of 'rosdep init' command manually.
 
-> Tips: In linux, everything is file. If a command cannot work, the most possible reason is file loss. Therefore, if we can recover the missing files, most of the problems can be solved.
+> In linux, everything is file. If a command cannot work, the most possible reason is file loss. Therefore, if we can recover the missing files, most of the problems can be solved.
 Just find another computer with ros,  compare the files and directories in /ros of the two computers, and add the file by yourself.
 {: .prompt-tip }
 
-> Warning: This is extremely unrecommended ! Because you are not sure whether other tools have the same problem. Also, keeping your network active is necessary for all work, so trying step 1 and step 2 is enough, if it can't work, I highly suggest you to change a computer...
+> This is extremely unrecommended ! Because you are not sure whether other tools have the same problem. Also, keeping your network active is necessary for all work, so trying step 1 and step 2 is enough, if it can't work, I highly suggest you to change a computer...
 {: .prompt-warning }
 
 <big><b><font color=pink>HOORAY !!!!!!!! You've already finished all the steps, and now you can explore ROS as you wish !</font></b></big>
