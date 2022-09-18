@@ -18,12 +18,12 @@
   --link-color: rgb(240, 159, 54);
   --link-underline-color: rgb(20, 10, 94);
   --button-bg: rgb(217, 233, 73);
-  --btn-border-color: rgb(86, 13, 204);
+  --btn-border-color: rgb(118, 16, 235);
   --btn-backtotop-color: var(--btn-border-color);
   --btn-backtotop-border-color: var(--text-muted-color);
   --btn-box-shadow: var(--main-wrapper-bg);
   --card-header-bg: rgb(27, 7, 51);
-  --label-color: rgb(236, 232, 15);
+  --label-color: rgb(236, 203, 15);
   --checkbox-color: rgb(199, 206, 210);
   --checkbox-checked-color: var(--link-color);
 
@@ -92,7 +92,7 @@
 
   /* archives */
   --timeline-node-bg: rgb(150, 152, 156);
-  --timeline-color: rgb(103, 66, 145);
+  --timeline-color: rgb(66, 126, 145);
   --timeline-year-dot-color: var(--timeline-color);
 
   .post img[data-src] {
@@ -140,11 +140,11 @@
     background-image:
       linear-gradient(
         to left,
-        rgb(53, 3, 88),
-        rgb(125, 69, 182),
-        rgb(116, 70, 172),
-        rgb(125, 69, 182),
-        rgb(53, 3, 88)
+        rgb(26, 26, 30),
+        rgb(39, 39, 45),
+        rgb(39, 39, 45),
+        rgb(39, 39, 45),
+        rgb(26, 26, 30)
       );
   }
 
