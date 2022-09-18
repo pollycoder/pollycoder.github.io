@@ -74,10 +74,10 @@ sudo apt install ros-noetic-desktop-full
 ```
 
 > p.s. If you want to install more other packages ROS doesn't have, use the following command:
+{: .prompt-info }
 ```shell
 sudo apt install ros-noetic-PACKAGE # Replace PACKAGE with target package name
 ```
-{: .prompt-info }
 ### Step 5 Setup the environment
 
 ROS environment is quite like bash, use the following command to source ros-bash:
@@ -107,10 +107,9 @@ rosdep update
 ```
 
 > Warning:
-
 Some times you may get an error report like this:
-
 ![ros_installation_error_rosdep_init](https://raw.githubusercontent.com/pollycoder/blog_image/main/ros/ros_installation_error_rosdep_init.png)
+{: .prompt.warning }
 
 If you encounter this problem, follow the following steps:
 
