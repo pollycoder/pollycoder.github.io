@@ -123,7 +123,7 @@ If it can't work, please check your network status. If it works,  go to the nex
 2. Find ip address of the domain:
 
 > Here we recommend <a href="https://www.ipaddress.com/">ipaddress.com</a>, which is useful when looking up the ip address of one URL.
-As for `raw.githubusercontent.com`, here are several common ip addresses:
+As for raw.githubusercontent.com, here are several common ip addresses:
 - 185.199.108.133
 - 185.199.109.133
 - 185.199.110.133
