@@ -31,19 +31,12 @@ In ROS developing, `CMakelists.txt` and `package.xml` are two important files to
 
 
 For complete tutorials, go to <a href="http://wiki.ros.org/catkin/CMakeLists.txt">ROS wiki --- CMakeLists.txt</a> for further info.
-
-<font color=gree>Tips:</font>
-
-<font color=gree>Here we find that somewhere has</font> `#` <font color=gree>commented, somewhere has</font> `##` <font color=gree>commented, somewhere has no comment. </font>
-
-<font color=gree>This a small trick:</font>
-
-<font color=gree>No comment---------This part is indispensible. You'd better not comment them or your project can't be made.</font>
-
-`#` <font color=gree>commented------This part is optional, you can uncomment them when you need.</font>
-
-`##`<font color=gree> commented-----This part is the real comment. Don't uncomment them.</font>
-
+> Here we find that somewhere has `#` commented, somewhere has `##` commented, somewhere has no comment.
+This a small trick:
+- No comment---------This part is indispensible. You'd better not comment them or your project can't be made.
+- `#` commented------This part is optional, you can uncomment them when you need.
+- `##` commented-----This part is the real comment. Don't uncomment them.
+{: .prompt-tip }
 ## Package.xml
 
 
