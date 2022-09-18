@@ -53,14 +53,13 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 ```
 
-<mark><font color=red>Warning:</font></mark>
-
+> Warning:
 <mark><font color=red>Don't just copy the command from ros wiki, because the command provided didn't provide the  pubkey, if you cmd 
 c+v unquestioningly, you may see an error report like this when you try the next step:</font></mark>
 
 ![ros_installation_error_key](https://raw.githubusercontent.com/pollycoder/blog_image/main/ros/ros_installation_error_key.jpeg)
 
-<mark><font color=red>This is because you didn't sign the source.</font></mark>
+{: .prompt-danger }
 
 Now you can check your sources:
 
@@ -76,12 +75,13 @@ Here we recommend `Desktop-full Install`, because the features in this version a
 sudo apt install ros-noetic-desktop-full
 ```
 
-<font color=yellow>p.s. If you want to install more other packages ROS doesn't have, use the following command:</font>
+> p.s. If you want to install more other packages ROS doesn't have, use the following command:
+
 
 ```shell
 sudo apt install ros-noetic-PACKAGE # Replace PACKAGE with target package name
 ```
-
+{: .prompt-info }
 ### Step 5 Setup the environment
 
 ROS environment is quite like bash, use the following command to source ros-bash:
@@ -110,9 +110,9 @@ sudo rosdep init
 rosdep update
 ```
 
-<mark><font color=red>Warning:</font></mark>
+> Warning:
 
-<mark><font color=red>Some times you may get an error report like this:</font></mark>
+Some times you may get an error report like this:
 
 ![ros_installation_error_rosdep_init](https://raw.githubusercontent.com/pollycoder/blog_image/main/ros/ros_installation_error_rosdep_init.png)
 
@@ -149,6 +149,7 @@ Add the IP address to `~/etc/hosts`, save and close the file.
 <font color=gree>Just find another computer with ros,  compare the files and directories in /ros of the two computers, and add the file by yourself.</font>
 
 <mark><font color=red>Warning: This is extremely unrecommended ! Because you are not sure whether other tools have the same problem. Also, keeping your network active is necessary for all work, so trying step 1 and step 2 is enough, if it can't work, I highly suggest you to change a computer...</font></mark>
+{: .prompt-warning }
 
 <big><b><font color=pink>HOORAY !!!!!!!! You've already finished all the steps, and now you can explore ROS as you wish !</font></b></big>
 

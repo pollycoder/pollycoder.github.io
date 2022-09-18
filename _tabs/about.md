@@ -23,7 +23,7 @@ order: 4
 {: .prompt-danger }
 
 > If you need help, you can contact Polly:
-E-mail: pollyjoe2003@gmail.com
-Github Issues: pollycoder/pollycoder.github.io
-Or you can just click the side bar button, both E-mail and Github is available.
+1. E-mail: pollyjoe2003@gmail.com
+2. Github Issues: pollycoder/pollycoder.github.io
+3. Or you can just click the side bar button, both E-mail and Github is available.
 {: .prompt-info }
