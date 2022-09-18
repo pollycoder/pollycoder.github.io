@@ -199,3 +199,8 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+leancloud: 
+  enable: true
+  app_id: rVP6omasYjanqxgWr6B8Zkhg-gzGzoHsz
+  appkey: KlvdBC6GXcRav6LVSqqhbvar
