@@ -21,3 +21,9 @@ order: 4
 1. Making abusing comments, no matter on the author or other commneters.
 2. Copying my blog without quote the source (copyright is very important!)
 {: .prompt-danger }
+
+> If you need help, you can contact Polly:
+E-mail: pollyjoe2003@gmail.com
+Github Issues: pollycoder/pollycoder.github.io
+Or you can just click the side bar button, both E-mail and Github is available.
+{: .prompt-info }
