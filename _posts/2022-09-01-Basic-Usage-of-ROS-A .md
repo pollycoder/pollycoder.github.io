@@ -74,8 +74,6 @@ sudo apt install ros-noetic-desktop-full
 ```
 
 > p.s. If you want to install more other packages ROS doesn't have, use the following command:
-
-
 ```shell
 sudo apt install ros-noetic-PACKAGE # Replace PACKAGE with target package name
 ```
