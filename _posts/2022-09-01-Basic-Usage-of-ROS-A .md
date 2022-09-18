@@ -107,7 +107,7 @@ rosdep update
 
 > Some times you may get an error report like this:
 ![ros_installation_error_rosdep_init](https://raw.githubusercontent.com/pollycoder/blog_image/main/ros/ros_installation_error_rosdep_init.png)
-{: .prompt.warning }
+{: .prompt-warning }
 
 If you encounter this problem, follow the following steps:
 
