@@ -24,7 +24,8 @@ ROS wiki have the most comprehensive learning materials, including operations an
 
 ROS answers is the official Q&A community.
 
-<font color=gree>Tips: VPN is unnecessary here. However, a VPN can make your visit faster and smoother, so better get one.</font>
+> VPN is unnecessary here. However, a VPN can make your visit faster and smoother, so better get one.
+{: .prompt-tip }
 
 ### 2. Other convenient resources
 
@@ -32,7 +33,8 @@ The best solution when you can't find answer on ROS wiki is<b>` GOOGLING`</b>
 
 When you google, you may find many useful websites and blogs written by fully experienced developers, such as <a href="https://www.csdn.net/"> CSDN</a>, <a href="https://stackoverflow.com/">Stackoverflow</a> and so on.
 
-<font color=gree>Tips: VPN is required when googling.</font>
+> VPN is required when googling.
+{: .prompt-warning }
 
 <b><big><font color=pink>With those resources, your learning process may become easier.</font></big></b>
 
@@ -84,7 +86,8 @@ catkin_create_pkg PKG_NAME [dependency 1][dependency 2]...
 # You can also add other dependencies, it depends on which packages you need to include
 ```
 
-<font color=gree>Tips: Actually, this command mainly helps you to generate the files entailed to build your project. Therefore, if you are not sure what dependency you may need in your work, you can add</font> `roscpp`/ `rospy` <font color=gree>only, and add the other dependencies in</font> `CMakeLists.txt`  <font color=gree>and </font> `package.xml` <font color=gree>later.</font>
+> Actually, this command mainly helps you to generate the files entailed to build your project. Therefore, if you are not sure what dependency you may need in your work, you can add`roscpp`/ `rospy` only, and add the other dependencies in `CMakeLists.txt`  and  `package.xml` later.
+{: .prompt-tip }
 
 #### Step 3 Build your package
 
@@ -102,9 +105,8 @@ CMakeLists.txt package.xml src include
 
 Now you can start your work like a normal Cpp or Python project. Take Cpp as example, put header files in `/include`, and put source files in `/src,`.
 
-<mark><font color=red>Warning:</font></mark>
-
-<mark><font color=red>Remember to modify CMakeLists.txt and package.xml, how to do this will  be posted in <a href="https://blog.polly-mindpalace.xyz/posts/Basic-Usage-of-ROS-C/"><b>Basic Usage of ROS (3)</b></a></font></mark>
+> Remember to modify CMakeLists.txt and package.xml, how to do this will be posted in <a href="https://blog.polly-mindpalace.xyz/posts/Basic-Usage-of-ROS-C/"><b>Basic Usage of ROS (3)</b></a>
+{: .prompt-danger }
 
 After you finish your work, build the package:
 
@@ -130,9 +132,8 @@ Use `rosrun` to run your project:
 rosrun [package] [exec file]
 ```
 
- <mark><font color=red>Warning:</font></mark>
-
- <mark><font color=red>There is something different from ROS 2. In ROS 1, what we need to run is executable file, instead of .cpp or .py file !</font></mark>
+> There is something different from ROS 2. In ROS 1, what we need to run is executable file, instead of .cpp or .py file !
+{: .prompt-warning }
 
 <b><big><font color=pink>HOORAY !!!!!!!! Now you can create your own work now !</font></big></b>
 
