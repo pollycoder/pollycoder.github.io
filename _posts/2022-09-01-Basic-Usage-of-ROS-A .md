@@ -125,26 +125,22 @@ If it can't work, please check your network status. If it works,  go to the nex
 
 2. Find ip address of the domain:
 
-<font color=gree>Tips: Here we recommend <a href="https://www.ipaddress.com/">ipaddress.com</a>, which is useful when looking up the ip address of one URL.</font>
-
-<font color=gree>As for</font> `raw.githubusercontent.com`, <font color=gree>here are several common ip addresses:</font>
-
-- <font color=gree>185.199.108.133</font>
-- <font color=gree>185.199.109.133</font>
-- <font color=gree>185.199.110.133</font>
-- <font color=gree>185.199.111.133</font>
-
-<font color=gree>The tip is just my experience, the ip may change sometimes, anyway, the core task is to find out the IP address.</font>
-
-Add the IP address to `~/etc/hosts`, save and close the file.
+> Tips: Here we recommend <a href="https://www.ipaddress.com/">ipaddress.com</a>, which is useful when looking up the ip address of one URL.
+As for `raw.githubusercontent.com`, here are several common ip addresses:
+- 185.199.108.133
+- 185.199.109.133
+- 185.199.110.133
+- 185.199.111.133
+The tip is just my experience, the ip may change sometimes, anyway, the core task is to find out the IP address.Add the IP address to `~/etc/hosts`, save and close the file.
+{: .prompt-tip }
 
 3. Retry step 1. If it doesn't work,  you may need to complete the process of 'rosdep init' command manually.
 
-<font color=gree>Tips: In linux, everything is file. If a command cannot work, the most possible reason is file loss. Therefore, if we can recover the missing files, most of the problems can be solved.</font>
+> Tips: In linux, everything is file. If a command cannot work, the most possible reason is file loss. Therefore, if we can recover the missing files, most of the problems can be solved.
+Just find another computer with ros,  compare the files and directories in /ros of the two computers, and add the file by yourself.
+{: .prompt-tip }
 
-<font color=gree>Just find another computer with ros,  compare the files and directories in /ros of the two computers, and add the file by yourself.</font>
-
-<mark><font color=red>Warning: This is extremely unrecommended ! Because you are not sure whether other tools have the same problem. Also, keeping your network active is necessary for all work, so trying step 1 and step 2 is enough, if it can't work, I highly suggest you to change a computer...</font></mark>
+> Warning: This is extremely unrecommended ! Because you are not sure whether other tools have the same problem. Also, keeping your network active is necessary for all work, so trying step 1 and step 2 is enough, if it can't work, I highly suggest you to change a computer...
 {: .prompt-warning }
 
 <big><b><font color=pink>HOORAY !!!!!!!! You've already finished all the steps, and now you can explore ROS as you wish !</font></b></big>
