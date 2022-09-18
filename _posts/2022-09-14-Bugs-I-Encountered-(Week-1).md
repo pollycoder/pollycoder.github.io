@@ -8,17 +8,13 @@ math: true
 mermaid: true
 ---
 
-<mark><big><font color=red>Four steps when you build and run your code:</font></big></mark>
-
-<mark><big><font color=red>1. Pre-processing</font></big></mark>
-
-<mark><big><font color=red>2. Compiling</font></big></mark>
-
-<mark><big><font color=red>3. Assembling</font></big></mark>
-
-<mark><big><font color=red>4. Linking</font></big></mark>
-
-<mark><big><font color=red>Mostly bugs may happen in step 2 and 4.</font></big></mark>
+> Four steps when you build and run your code:
+1. Pre-processing
+2. Compiling
+3. Assembling
+4. Linking
+Mostly bugs may happen in step 2 and 4.
+{: .prompt-danger }
 
 # Why Mac treat warning as ERROR when compiling ?
 
@@ -63,7 +59,8 @@ endif(HAVE_CLANG_THREAD_SAFETY)
 
 Therefore the bug couldn't be clearer any more:
 
-<mark><font color=red><big><b>Mac uses clang to compile files, and here according to the CMakeLists, once you have clang to compile, the compiler will treat some warnings as ERROR !</b></big></font></mark>
+> Mac uses clang to compile files, and here according to the CMakeLists, once you have clang to compile, the compiler will treat some warnings as ERROR !
+{: .prompt-danger }
 
 Once the bug was found, CMakeLists needed to be modified:
 
@@ -78,9 +75,8 @@ endif(HAVE_CLANG_THREAD_SAFETY)
 
 We could see that everything went right then.
 
-<b><font color=gree>Notes:</font></b>
-
-<b><font color=gree> Mac has `clang` only, the so-called 'gcc' or 'g++' are actually a `pointer to clang`. When you install `gcc` through HomeBrew, you can use `gcc command`, which meets most programmers' taste, but what is working is still `clang`!!!  That's why every trial was a failure on Mac even though you'd installed gcc.</font></b>
+> Mac has `clang` only, the so-called 'gcc' or 'g++' are actually a `pointer to clang`. When you install `gcc` through HomeBrew, you can use `gcc command`, which meets most programmers' taste, but what is working is still `clang`!!!  That's why every trial was a failure on Mac even though you'd installed gcc.
+{: .prompt-tip }
 
 ```console
 $ gcc --version

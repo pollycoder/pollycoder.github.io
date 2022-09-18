@@ -10,9 +10,9 @@ mermaid: true
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b-2j_27FeH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<mark><big><font color=red>Whenever you copy code from others,  you have to cite the source !</font></big></mark>
-
-<mark><big><font color=red>For details, please go to: <a href="https://integrity.mit.edu/handbook/writing-code">MIT Code Writing Handbook</a>.</font></big></mark>
+> Whenever you copy code from others,  you have to cite the source !
+For details, please go to: <a href="https://integrity.mit.edu/handbook/writing-code">MIT Code Writing Handbook</a>.
+{: .prompt-danger }
 
 ## What should be provided
 
