@@ -14,5 +14,10 @@ order: 4
 
 > However, these things are not quite acceptable:
 1. Making unrelated comments----this is quite time-wasting I'm sorry to say.
-2. 
+2. Use my blog to show off in front of others (actually Polly hates showing off, especially when I make a subtle mistake !)
 {: .prompt-warning }
+
+> Last but not least, these things is NOT acceptable at all:
+1. Making abusing comments, no matter on the author or other commneters.
+2. Copying my blog without quote the source (copyright is very important!)
+{: .prompt-danger }
