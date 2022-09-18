@@ -54,11 +54,9 @@ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31
 ```
 
 > Warning:
-<mark><font color=red>Don't just copy the command from ros wiki, because the command provided didn't provide the  pubkey, if you cmd 
-c+v unquestioningly, you may see an error report like this when you try the next step:</font></mark>
-
+Don't just copy the command from ros wiki, because the command provided didn't provide the  pubkey, if you cmd 
+c+v unquestioningly, you may see an error report like this when you try the next step:
 ![ros_installation_error_key](https://raw.githubusercontent.com/pollycoder/blog_image/main/ros/ros_installation_error_key.jpeg)
-
 {: .prompt-danger }
 
 Now you can check your sources:
