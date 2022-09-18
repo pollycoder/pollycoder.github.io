@@ -83,7 +83,7 @@ theme_mode:   # [light|dark]
 img_cdn: https://raw.githubusercontent.com/pollycoder/blog_image/main
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /avatar/avatar1.JPG
+avatar: /avatar/avatar2.JPG
 
 # boolean type, the global switch for ToC in posts.
 toc: true
