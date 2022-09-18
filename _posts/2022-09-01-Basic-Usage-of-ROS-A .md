@@ -20,7 +20,8 @@ If you want to learn ROS by yourself, you can go to <a href="http://wiki.ros.org
 
 ## Part 2 Installation
 
-<font color=gree>Tips: In this essay, we recommend Ubuntu 20.04, because this is the latest version compatible with both ROS 1 and 2. Even though we do not use ROS 2 here,  since ROS 1 has already stopped updating, we are almost sure that ROS 2 might replace ROS 1 in the future.</font>
+> Tips: In this essay, we recommend Ubuntu 20.04, because this is the latest version compatible with both ROS 1 and 2. Even though we do not use ROS 2 here,  since ROS 1 has already stopped updating, we are almost sure that ROS 2 might replace ROS 1 in the future.
+{: .prompt-tip }
 
 ### Step 1: Choose your ROS version
 

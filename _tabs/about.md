@@ -11,3 +11,8 @@ order: 4
 2. Reading Polly's blog and giving objective advice personally.
 3. If you think some part of my blog is useful, quote it in your work (Don't forget honor code ! You have to include the source, which is the url of my blog.) or share it with other tech-fans.
 {: .prompt-tip }
+
+> However, these things are not quite acceptable:
+1. Making unrelated comments----this is quite time-wasting I'm sorry to say.
+2. 
+{: .prompt-warning }
