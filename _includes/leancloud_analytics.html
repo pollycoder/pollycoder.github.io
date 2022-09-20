@@ -130,7 +130,7 @@
           var timePassed = curTime.getTime() - lastTime.getTime();
 
           if(timePassed > 1 * 60 * 1000) {
-            console.log('距离该IP上一次访问该文章已超过了1分钟，更新访问记录，并增加访问次数');
+            console.log('距离该IP上一次访问该文章已超过了1分钟,更新访问记录，并增加访问次数');
 
             addCount(Counter);
 
@@ -142,11 +142,11 @@
               }
             });
           } else {
-            console.log('这是该IP 1分钟内重复访问该文章，不更新访问记录，不增加访问次数');
+            console.log('这是该IP 1分钟内重复访问该文章,不更新访问记录，不增加访问次数');
             showCount(Counter);
           }
         } else {
-          console.log('该IP第一次访问该文章，保存新的访问记录，并增加访问次数');
+          console.log('该IP第一次访问该文章,保存新的访问记录，并增加访问次数');
 
           addCount(Counter);
 
