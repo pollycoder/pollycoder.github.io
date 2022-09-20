@@ -203,4 +203,4 @@ jekyll-archives:
 leancloud: 
   enable: true
   app_id: rVP6omasYjanqxgWr6B8Zkhg-gzGzoHsz
-  appkey: KlvdBC6GXcRav6LVSqqhbvar
+  app_key: KlvdBC6GXcRav6LVSqqhbvar
