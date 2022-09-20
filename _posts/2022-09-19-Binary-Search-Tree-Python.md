@@ -7,13 +7,6 @@ author: Polly
 math: true
 mermaid: true
 ---
-<span id="/posts/%E7%BB%99%E6%96%87%E7%AB%A0%E5%8A%A0%E4%B8%8A%E4%BA%86%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/" class="leancloud_visitors" data-flag-title="Leetcode-----Binary Search Tree">
-    <i class="fa fa-eye"><span class="leancloud-visitors-count"></span></i>
-</span>
-
-
-
-
 # Original Problem
 
 <big><b>Given a number list, you can confirm a binary search tree. Now given two specified elements, you have to find the lowest common ancestor. </b></big>

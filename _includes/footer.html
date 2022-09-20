@@ -32,12 +32,22 @@
     </div>
 
   </div>
+<<<<<<< HEAD
 
 
   {% if site.leancloud_pageviews.enable %}
 <!--  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>-->
   <script src="/assets/js/dist/av-core-mini-0.6.1.js"></script>
   <script>AV.initialize("{{site.leancloud_pageviews.appid}}", "{{site.leancloud_pageviews.appkey}}");</script>
+=======
+  
+
+
+</footer>
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("jT7rDLXlG92o3ZuRpve1GRgU-gzGzoHsz", "L9TAA414ktdb77JEKrHi9DdB");</script>
+>>>>>>> 550fb23210ba92db6d575d308619931a395effba
   <script>
     //新增访问次数
     function addCount(Counter) {
@@ -244,9 +254,3 @@
         showCount(Counter)
       }
     });
-  </script>
-  {% endif %}
-
-
-
-</footer>
