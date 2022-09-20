@@ -33,28 +33,28 @@
 
   </div>
 
-<script src="https://code.bdstatic.com/npm/leancloud-storage@4.13.2/dist/av-core-min.js"></script>
-<script>AV.initialize("jT7rDLXlG92o3ZuRpve1GRgU-gzGzoHsz", "L9TAA414ktdb77JEKrHi9DdB");</script>
-<script>
+  <script src="//code.bdstatic.com/npm/leancloud-storage@4.13.2/dist/av-min.js"></script>
+  <script>AV.initialize("jT7rDLXlG92o3ZuRpve1GRgU-gzGzoHsz", "L9TAA414ktdb77JEKrHi9DdB");</script>
+  <script>
  //新增访问次数
- function addCount(Counter) {
+  function addCount(Counter) {
    // 页面（博客文章）中的信息：leancloud_visitors
    // id为page.url， data-flag-title为page.title
-   var $visitors = $(".leancloud_visitors");
-   var url = $visitors.attr('id').trim();
-   var title = $visitors.attr('data-flag-title').trim();
-   var query = new AV.Query(Counter);
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
 
    // 只根据文章的url查询LeanCloud服务器中的数据
-   query.equalTo("post_url", url);
-   query.find({
-     success: function(results) {
-       if (results.length > 0) {//说明LeanCloud中已经记录了这篇文章
-         var counter = results[0];
-         counter.fetchWhenSave(true);
-         counter.increment("visited_times");// 将点击次数加1
-         counter.save(null, {
-           success: function(counter) {
+    query.equalTo("post_url", url);
+    query.find({
+      success: function(results) {
+        if (results.length > 0) {//说明LeanCloud中已经记录了这篇文章
+          var counter = results[0];
+          counter.fetchWhenSave(true);
+          counter.increment("visited_times");// 将点击次数加1
+          counter.save(null, {
+            success: function(counter) {
              var $element = $(document.getElementById(url));
              var newTimes = counter.get('visited_times');
              $element.find('.leancloud-visitors-count').text(newTimes);
