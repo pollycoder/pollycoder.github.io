@@ -85,3 +85,11 @@ if __name__ == '__main__':
     for result in output_list:
         print(result)
 ```
+
+From the source code, you can already infer that my solution is totally based on binary tree operations.
+
+> My idea:
+To solve this problem, binary search tree situation is much easier, for in a binary search tree, it is required that left child node value be smaller than parent node while right child node be larger than parent node. Therefore, if a node is smaller than root node, it should be on the left branch, or else it should be on the right branch. 
+In this problem I tried post-order traversal, which means visit sub-branches first. But this is a little bit tricky, if you try in this way, you will lose the advantage of binary search tree, because you need to use original binary tree traversal. Therefore here we use pre-order traversal, which means we visit root node first.
+{: .prompt-tip }
+
