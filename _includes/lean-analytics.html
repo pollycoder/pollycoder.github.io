@@ -2,7 +2,7 @@
 
   {% comment %} custom analytics part create by xiamo {% endcomment %}
   <script src="/assets/js/dist/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("{{site.leancloud_visitors.app_id}}", "{{site.leancloud_visitors.app_key}}");</script>
+  <script>AV.initialize("{{site.leancloud_pageviews.app_id}}", "{{site.leancloud_pageviews.app_key}}");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
