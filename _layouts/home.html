@@ -74,6 +74,10 @@ layout: page
           </span>
         {% endif %}
 
+         <!-- time to read -->
+         <i class="far fa-clock fa-fw"></i>
+         {% include read-time.html content=post.content %}
+
         <!--pageviews-->
         {% if site.leancloud_pageviews.enable %}
         <span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
