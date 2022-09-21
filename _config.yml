@@ -64,7 +64,7 @@ google_analytics:
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
-leancloud_visitors:
+leancloud_pageviews:
   enable: true
   app_id: jT7rDLXlG92o3ZuRpve1GRgU-gzGzoHsz
   app_key: L9TAA414ktdb77JEKrHi9DdB
