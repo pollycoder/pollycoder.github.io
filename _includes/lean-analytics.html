@@ -1,7 +1,7 @@
 {% if site.leancloud_visitors.enable %}
 
   {% comment %} custom analytics part create by xiamo {% endcomment %}
-  <script src="./node_modules/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://code.bdstatic.com/npm/leancloud-storage@4.13.2/dist/av-core-min.js"></script>
   <script>AV.initialize("{{site.leancloud_visitors.app_id}}", "{{site.leancloud_visitors.app_key}}");</script>
   <script>
     function showTime(Counter) {
