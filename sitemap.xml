@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/categories/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/tags/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/archives/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/about/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/posts/emo/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/posts/Binary-Search-Tree-Python/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/posts/Bugs-I-Encountered-(Week-1)/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/posts/cite-your-source/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/posts/TaskList/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/posts/Ubuntu-Installation/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/posts/Basic-Usage-of-ROS-C/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/posts/Basic-Usage-of-ROS-B/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/posts/Basic-Usage-of-ROS-A/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/tags/ros/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/tags/cite/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/tags/debug/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/tags/diary/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/tags/dsa/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/tags/task-list/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/tags/ubuntu/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/categories/diary/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/categories/technotes/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/categories/advanced-programming/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/categories/advanced-python/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/categories/ros/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/categories/ubuntu/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/categories/worklog/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.polly-mindpalace.xyz/categories/agile/</loc>
+  <lastmod>2022-09-22T15:23:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
