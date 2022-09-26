@@ -142,6 +142,9 @@ tail_includes:
 
       {% endif %}
     </div>
+   {% if site.gitalk %}
+   {% include gitalk.html %}
+   {% endif %}
 
     {% include post-sharing.html %}
 
