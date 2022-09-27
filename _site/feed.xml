@@ -1,0 +1,269 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Polly's Mind Palace</title>
+  <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
+  <updated>2022-09-24T18:41:34+08:00</updated>
+  <author>
+    <name>Polly Zhou</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
+  <rights> © 2022 Polly Zhou </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>看到同道中人的 blog 引发的一点小感动</title>
+    <link href="http://localhost:4000/posts/emo/" rel="alternate" type="text/html" title="看到同道中人的 blog 引发的一点小感动" />
+    <published>2022-09-22T00:20:30+08:00</published>
+  
+    <updated>2022-09-22T20:54:12+08:00</updated>
+  
+    <id>http://localhost:4000/posts/emo/</id>
+    <content src="http://localhost:4000/posts/emo/" />
+    <author>
+      <name>Polly</name>
+    </author>
+
+  
+    
+    <category term="Diary" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      2022.9.22	Thu 	Sunny
+
+​        大概是以前见鸡汤见得多了，对鸡汤已经开始免疫甚至是厌恶。因为我总觉得，这些写鸡汤的人只是为了给别人看，他们不理解人们每天的焦虑和痛苦来自何方，就开始肆无忌惮的劝人们放下。所谓“未尝他人苦，莫劝他人善”，这样的鸡汤，喝得越多越让人反胃。我们需要的，是真实的，能够贴近我们的故事的感召。
+
+​        人是需要时时回家或者去寻找同道中人的，尤其是在思绪纷乱的时候。我们总说，不要为外界所干扰，要做自己。但是，老祖宗们为了生存，赋予了我们随时感知外界的能力。其实反过来想一想，我们现在许多希望自己改掉的毛病，比如容易被外界干扰，他们不是毛病，只是一种feature，在远古时期可是生存的法宝。然而现在我们进入了所谓的文明时期，即使没有这些特性，我们也可以活着，衣食不愁；又或者，我们因为步入了文明时期，所以我们物竞天择的法则已经变了...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Binary Search Tree Python</title>
+    <link href="http://localhost:4000/posts/Binary-Search-Tree-Python/" rel="alternate" type="text/html" title="Binary Search Tree Python" />
+    <published>2022-09-14T18:52:30+08:00</published>
+  
+    <updated>2022-09-20T20:33:06+08:00</updated>
+  
+    <id>http://localhost:4000/posts/Binary-Search-Tree-Python/</id>
+    <content src="http://localhost:4000/posts/Binary-Search-Tree-Python/" />
+    <author>
+      <name>Polly</name>
+    </author>
+
+  
+    
+    <category term="TechNotes" />
+    
+    <category term="Advanced Python" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Original Problem
+
+Given a number list, you can confirm a binary search tree. Now given two specified elements, you have to find the lowest common ancestor. 
+
+My Solution
+
+Source code is listed below:
+
+#!/usr/bin/env python3
+# Minimum common ancestors of binary seaarch tree
+
+# Special acknowledgement for Bingchuan Wei.
+# After discussed this practice with him, I learned basic binary search tree ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Bugs I Encountered (Week 1)</title>
+    <link href="http://localhost:4000/posts/Bugs-I-Encountered-(Week-1)/" rel="alternate" type="text/html" title="Bugs I Encountered (Week 1)" />
+    <published>2022-09-14T18:52:30+08:00</published>
+  
+    <updated>2022-09-18T18:03:48+08:00</updated>
+  
+    <id>http://localhost:4000/posts/Bugs-I-Encountered-(Week-1)/</id>
+    <content src="http://localhost:4000/posts/Bugs-I-Encountered-(Week-1)/" />
+    <author>
+      <name>Polly</name>
+    </author>
+
+  
+    
+    <category term="TechNotes" />
+    
+    <category term="Advanced Programming" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  Four steps when you build and run your code:
+  
+    Pre-processing
+    Compiling
+    Assembling
+    Linking
+Mostly bugs may happen in step 2 and 4.
+  
+
+
+Why Mac treat warning as ERROR when compiling ?
+
+When I did Week 1 homework, there was a bug that only Mac users met.
+
+Source code:
+
+switch (type) {
+    case kNoCompression:
+      block_contents = raw;
+      break;
+    default:
+      assert(...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Cite your source</title>
+    <link href="http://localhost:4000/posts/cite-your-source/" rel="alternate" type="text/html" title="Cite your source" />
+    <published>2022-09-13T22:59:30+08:00</published>
+  
+    <updated>2022-09-18T18:03:48+08:00</updated>
+  
+    <id>http://localhost:4000/posts/cite-your-source/</id>
+    <content src="http://localhost:4000/posts/cite-your-source/" />
+    <author>
+      <name>Polly</name>
+    </author>
+
+  
+    
+    <category term="TechNotes" />
+    
+    <category term="Advanced Programming" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+  Whenever you copy code from others,  you have to cite the source !
+For details, please go to: MIT Code Writing Handbook.
+
+
+What should be provided
+
+
+  URL
+  Date of retrieval
+  ( If you adapted the code ) Add “Adapted from..” or “Based on..”
+  ( If you use open source software ) Copyright ( in your code ) + License ( in your workspace folder )
+
+
+Format of citing code sources
+
+Example 1——Qt...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>2022.9.12 Work Journal - Tasks</title>
+    <link href="http://localhost:4000/posts/TaskList/" rel="alternate" type="text/html" title="2022.9.12 Work Journal - Tasks" />
+    <published>2022-09-12T14:43:30+08:00</published>
+  
+    <updated>2022-09-12T14:43:30+08:00</updated>
+  
+    <id>http://localhost:4000/posts/TaskList/</id>
+    <content src="http://localhost:4000/posts/TaskList/" />
+    <author>
+      <name>Polly</name>
+    </author>
+
+  
+    
+    <category term="WorkLog" />
+    
+    <category term="Agile" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Brief introduction of Agile
+
+1. Debugging: Upper computer + Lower computer
+
+(1)Check the controller program (on IPC), make sure it’s working well.
+
+(2)Check the circuit is working, in case it’s aging or breaking.
+
+(3)Read the documentation of previous work.
+
+This step is mainly for getting familiar with the project and making sure previous work is running well.
+
+2. Camera and laser radar(Not do...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
