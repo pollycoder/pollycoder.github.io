@@ -10,14 +10,14 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Tue Sep 27 19:27:42 2022
+# Make data base, printed on Thu Sep 29 10:49:30 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
-# environment
  
+# environment
 RUBY_VERSION = 3.1.2
 # automatic
 ?F = $(notdir $?)
@@ -109,6 +109,7 @@ MAKE = $(MAKE_COMMAND)
 LC_TERMINAL = iTerm2
 # environment
 SHLVL = 3
+ 
 # environment
 RUBY_ROOT = /Users/polly/.rubies/ruby-3.1.2
 # environment
@@ -157,7 +158,6 @@ XPC_SERVICE_NAME = application.com.microsoft.VSCode.31876774.31876780.BF686FB4-6
 LC_TERMINAL_VERSION = 3.4.16
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
- 
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -215,9 +215,9 @@ VSCODE_PID = 95499
 
 # Directories
 
-# . (device 16777232, inode 32523299): 32 files, no impossibilities.
+# . (device 16777232, inode 32523299): 31 files, no impossibilities.
 
-# 32 files, no impossibilities in 1 directories.
+# 31 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -289,6 +289,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Tue Sep 27 19:27:42 2022
+# Finished Make data base on Thu Sep 29 10:49:30 2022
 
  
