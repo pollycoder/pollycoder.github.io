@@ -44,11 +44,12 @@ def list_generator(n):
     return num_list
 
 
-#########################################
+####################################################
 # Permutation
 # We use recursion to solve the problem:
-# For each trial, pick one element as the
-#########################################
+# For each trial, pick one element as the first one, 
+# and permute the remaining elements
+####################################################
 def permutation(input_list):
     result_list = []
     length = len(input_list)
@@ -81,3 +82,10 @@ if __name__ == '__main__':
     perm_print(output_list)
 ```
 
+If we sometimes see a function calling itself inside itself, that is recursion.
+
+> My idea:<br>
+Recursion is an important way of thinking.<br>
+The main idea of recursion is to imitate. Because each time you call the function inside itself, it is solving the same problem, just with a lower dimension.<br>
+Therefore, for this problem, we can assign one element as the first one, do the permutation to the remaining elements, put all the situations together and we will get a full permutation.
+{: .prompt-tip }
