@@ -67,16 +67,11 @@ Linux: ★★★☆☆
 ROS: ★★☆☆☆
 
 > Description:
-
- ★☆☆☆☆:	Only known, never used.
-
- ★★☆☆☆:	Have been used for short code, have not been used in big project yet.
-
- ★★★☆☆:	Have been used in a big project, but not used quite a lot.
-
- ★★★★☆:	Almost use every day, but not familiar with anything.
-
- ★★★★★:	I am the EXPERT!!!!!!!!!!!
+ ★☆☆☆☆:	Only known, never used.<br>
+ ★★☆☆☆:	Have been used for short code, have not been used in big project yet.<br>
+ ★★★☆☆:	Have been used in a big project, but not used quite a lot.<br>
+ ★★★★☆:	Almost use every day, but not familiar with anything.<br>
+ ★★★★★:	I am the EXPERT!!!!!!!!!!!<br>
 {: .prompt-tip }
 
 
