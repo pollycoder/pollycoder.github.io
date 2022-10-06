@@ -76,7 +76,8 @@ ROS: ★★☆☆☆
 
  ★★★★☆:	Almost use every day, but not familiar with anything.
 
- ★★★★★:	I am the EXPERT!!!!!!!!!!!{: .prompt-tip}
+ ★★★★★:	I am the EXPERT!!!!!!!!!!!
+ {: .prompt-tip }
 
 
 
