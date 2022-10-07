@@ -84,10 +84,20 @@ tail_includes:
       <!-- read time -->
       {% include read-time.html content=content prompt=true %}
 
+      <!-- page views -->
+      {% if site.google_analytics.pv.proxy_endpoint or site.google_analytics.pv.cache_path %}
+      <span id="pv" class="pageviews">
+        <i class="fas fa-spinner fa-spin fa-fw"></i>
+      </span>
+      {{ site.data.locales[lang].post.pageview_measure }}
+      {% endif %}
+
+      <!-- page views -->
+
       {% if site.leancloud_pageviews.enable %}
-          <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
-            <i class="fa fa-eye"></i> <span class="leancloud-visitors-count"></span>
-          </span>
+      <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+        <i class="fa fa-eye"><span class="leancloud-visitors-count"></span></i>
+      </span>
       {% endif %}
 
     </div>
