@@ -1,0 +1,151 @@
+I"œ,<h1 id="original-problem">Original Problem</h1>
+
+<p><big><b>Given a number list, you can confirm a binary search tree. Now given two specified elements, you have to find the lowest common ancestor.Â </b></big></p>
+
+<h1 id="my-solution">My Solution</h1>
+
+<p>Source code is listed below:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+</pre></td> --><td class="rouge-code"><pre><span class="c1">#!/usr/bin/env python3
+# Minimum common ancestors of binary seaarch tree
+</span>
+<span class="c1"># Special acknowledgement for Bingchuan Wei.
+# After discussed this practice with him, I learned basic binary search tree operation
+# by myself and succeeded to give an easier solution thanks to his help.
+</span>
+<span class="c1"># Nodes of a binary tree
+</span><span class="k">class</span> <span class="nc">TreeNode</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">val</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">left</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">right</span> <span class="o">=</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="p">.</span><span class="n">val</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="p">.</span><span class="n">left</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="p">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="p">.</span><span class="n">left</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="p">.</span><span class="n">val</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="p">.</span><span class="n">right</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="p">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="p">.</span><span class="n">right</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">right</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+
+<span class="c1"># A binary search tree
+</span><span class="k">class</span> <span class="nc">BSTree</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">root</span> <span class="o">=</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_list</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">node_val</span> <span class="ow">in</span> <span class="n">input_list</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="p">.</span><span class="n">root</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="p">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="n">node_val</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="p">.</span><span class="n">root</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">node_val</span><span class="p">)</span>
+
+<span class="c1"># Solution part
+</span><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">root</span><span class="p">:</span> <span class="s">'TreeNode'</span><span class="p">,</span> <span class="n">treenode1</span><span class="p">:</span> <span class="s">'TreeNode'</span><span class="p">,</span> <span class="n">treenode2</span><span class="p">:</span> <span class="s">'TreeNode'</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">root</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">treenode1</span><span class="p">.</span><span class="n">val</span> <span class="o">&lt;</span> <span class="n">root</span><span class="p">.</span><span class="n">val</span> <span class="ow">and</span> <span class="n">treenode2</span><span class="p">.</span><span class="n">val</span> <span class="o">&lt;</span> <span class="n">root</span><span class="p">.</span><span class="n">val</span><span class="p">:</span>
+            <span class="n">root</span> <span class="o">=</span> <span class="n">root</span><span class="p">.</span><span class="n">left</span>
+            <span class="k">continue</span>
+        <span class="k">elif</span> <span class="n">treenode1</span><span class="p">.</span><span class="n">val</span> <span class="o">&gt;</span> <span class="n">root</span><span class="p">.</span><span class="n">val</span> <span class="ow">and</span> <span class="n">treenode2</span><span class="p">.</span><span class="n">val</span> <span class="o">&gt;</span> <span class="n">root</span><span class="p">.</span><span class="n">val</span><span class="p">:</span>
+            <span class="n">root</span> <span class="o">=</span> <span class="n">root</span><span class="p">.</span><span class="n">right</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">root</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">N</span><span class="p">,</span> <span class="n">M</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">input_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">BSTree</span><span class="p">()</span>
+    <span class="n">tree</span><span class="p">.</span><span class="n">construct</span><span class="p">(</span><span class="n">input_list</span><span class="p">)</span>
+    <span class="n">output_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">M</span><span class="p">)):</span>
+        <span class="n">val1</span><span class="p">,</span> <span class="n">val2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+        <span class="n">node1</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">val1</span><span class="p">))</span>
+        <span class="n">node2</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">val2</span><span class="p">))</span>
+        <span class="n">lowest_ance</span> <span class="o">=</span> <span class="n">solution</span><span class="p">(</span><span class="n">tree</span><span class="p">.</span><span class="n">root</span><span class="p">,</span> <span class="n">node1</span><span class="p">,</span> <span class="n">node2</span><span class="p">)</span>
+        <span class="n">output_list</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">lowest_ance</span><span class="p">.</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">output_list</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>From the source code, you can already infer that my solution is totally based on binary tree operations.</p>
+
+<blockquote class="prompt-tip">
+  <p>My idea:<br />
+To solve this problem, binary search tree situation is much easier, for in a binary search tree, it is required that left child node value be smaller than parent node while right child node be larger than parent node. Therefore, if a node is smaller than root node, it should be on the left branch, or else it should be on the right branch. <br />
+In this problem I tried post-order traversal, which means visit sub-branches first. But this is a little bit tricky, if you try in this way, you will lose the advantage of binary search tree, because you need to use original binary tree traversal. Therefore here we use pre-order traversal, which means we visit root node first.</p>
+</blockquote>
+
+:ET

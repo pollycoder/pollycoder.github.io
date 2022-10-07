@@ -1,0 +1,104 @@
+I"�<blockquote class="prompt-danger">
+  <p>Four steps when you build and run your code:</p>
+  <ol>
+    <li>Pre-processing</li>
+    <li>Compiling</li>
+    <li>Assembling</li>
+    <li>Linking
+Mostly bugs may happen in step 2 and 4.</li>
+  </ol>
+</blockquote>
+
+<h1 id="why-mac-treat-warning-as-error-when-compiling-">Why Mac treat warning as ERROR when compiling ?</h1>
+
+<p>When I did Week 1 homework, there was a bug that only Mac users met.</p>
+
+<p>Source code:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td> --><td class="rouge-code"><pre><span class="k">switch</span> <span class="p">(</span><span class="n">type</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="n">kNoCompression</span><span class="p">:</span>
+      <span class="n">block_contents</span> <span class="o">=</span> <span class="n">raw</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="nl">default:</span>
+      <span class="n">assert</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Normally, this code may cause a warning:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="go">warning: enumeration value 'kSnappyCompression' not handled in switch [-Wswitch]
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>However, when I tested on Mac, it caused an error:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="go">error: enumeration value 'kSnappyCompression' not handled in switch [-Werror,-Wswitch]
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Everything went right when I tested on Ubuntu. Therefore, I went to look up [Werror], and found the bug in <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code>:</p>
+
+<p>Original file:</p>
+
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td> --><td class="rouge-code"><pre><span class="nb">if</span><span class="p">(</span>HAVE_CLANG_THREAD_SAFETY<span class="p">)</span>
+  <span class="nb">target_compile_options</span><span class="p">(</span>leveldb
+    PUBLIC
+      -Werror -Wthread-safety<span class="p">)</span>
+<span class="nb">endif</span><span class="p">(</span>HAVE_CLANG_THREAD_SAFETY<span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Therefore the bug couldn’t be clearer any more:</p>
+
+<blockquote class="prompt-danger">
+  <p>Mac uses clang to compile files, and here according to the CMakeLists, once you have clang to compile, the compiler will treat some warnings as ERROR !</p>
+</blockquote>
+
+<p>Once the bug was found, CMakeLists needed to be modified:</p>
+
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td> --><td class="rouge-code"><pre><span class="nb">if</span><span class="p">(</span>HAVE_CLANG_THREAD_SAFETY<span class="p">)</span>
+  <span class="nb">target_compile_options</span><span class="p">(</span>leveldb
+    PUBLIC
+      -Wthread-safety<span class="p">)</span>
+<span class="nb">endif</span><span class="p">(</span>HAVE_CLANG_THREAD_SAFETY<span class="p">)</span>
+<span class="c1">## Delete -Werror, which means closing Werror</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>We could see that everything went right then.</p>
+
+<blockquote class="prompt-tip">
+  <p>Mac has <code class="language-plaintext highlighter-rouge">clang</code> only, the so-called ’gcc’ or ’g++’ are actually a <code class="language-plaintext highlighter-rouge">pointer to clang</code>. When you install <code class="language-plaintext highlighter-rouge">gcc</code> through HomeBrew, you can use <code class="language-plaintext highlighter-rouge">gcc command</code>, which meets most programmers’ taste, but what is working is still <code class="language-plaintext highlighter-rouge">clang</code>!!!  That’s why every trial was a failure on Mac even though you’d installed gcc.</p>
+</blockquote>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td> --><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>gcc <span class="nt">--version</span>
+<span class="go">Apple clang version 13.1.6 (clang-1316.0.21.2.5)
+Target: arm64-apple-darwin21.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+:ET
