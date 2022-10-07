@@ -6,6 +6,7 @@ tags: [debug]
 author: Polly
 math: true
 mermaid: true
+pin: true
 ---
 
 > Four steps when you build and run your code:

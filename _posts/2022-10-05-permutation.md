@@ -6,6 +6,7 @@ tags: [algorithm]
 author: Polly
 math: true
 mermaid: true
+pin: true
 ---
 
 # Origianl Problem
