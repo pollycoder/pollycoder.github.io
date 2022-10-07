@@ -36,7 +36,8 @@ plugins:
 
 github:
   username: pollycoder             # change to your github username
-
+twitter:
+  username:
 
 social:
   # Change to your full name.
@@ -45,12 +46,13 @@ social:
   email: pollyjoe2003@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://twitter.com/username      # change to your twitter homepage
     - https://github.com/pollycoder       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification:               # fill in to your verification string
+google_site_verification: dRB1pgoL23OMuTCJJJ1NGJ36mdq_ZcDuuhBHlIjOovo              # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -58,9 +60,18 @@ google_site_verification:               # fill in to your verification string
 google_analytics:
   id: G-8J92YH68TT              # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
+ #default pv
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
     cache_path:       # the local PV cache data, friendly to visitors from GFW region
+#  pv:
+#    # The Google Analytics pageviews switch.
+#    # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
+#    enabled: true
+#    # the next options only valid when `google_analytics.pv` is enabled.
+#    proxy_url: ''
+#    proxy_endpoint: ''
+#    cache: true  # pv data local cache, good for the users from GFW area.
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
@@ -68,6 +79,7 @@ leancloud_pageviews:
   enable: true
   app_id: jT7rDLXlG92o3ZuRpve1GRgU-gzGzoHsz
   app_key: L9TAA414ktdb77JEKrHi9DdB
+
 
 
 # Prefer color scheme setting.
@@ -127,7 +139,7 @@ assets:
 pwa:
   enabled: true   # the option for PWA feature
 
-paginate: 10
+paginate: 6
 
 # ------------ The following options are not recommended to be modified ------------------
 
