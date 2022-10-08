@@ -95,8 +95,8 @@ tail_includes:
       <!-- page views -->
 
       {% if site.leancloud_pageviews.enable %}
-      <i class="far fa-eye fa-fw"></i>
-      <span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
+      <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+        <i class="far fa-eye fa-fw"><span class="leancloud-visitors-count"></span></i>
       </span>
       {% endif %}
 
