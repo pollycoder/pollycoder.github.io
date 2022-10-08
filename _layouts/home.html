@@ -87,8 +87,9 @@ layout: page
         {% endif %}
 
         {% if site.leancloud_pageviews.enable %}
+        <i class="fa fa-eye"></i>
         <span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
-            <i class="fa fa-eye"><span class="leancloud-visitors-count"></span></i>
+            <span class="leancloud-visitors-count"></span>
         </span>
         {% endif %}
 
