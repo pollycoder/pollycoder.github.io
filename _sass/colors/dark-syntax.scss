@@ -13,10 +13,10 @@
   .highlight .n { color: #f8f8f2; } /* Name */
   .highlight .o { color: #f92672; } /* Operator */
   .highlight .p { color: #f8f8f2; } /* Punctuation */
-  .highlight .cm { color: #75715e; } /* Comment.Multiline */
-  .highlight .cp { color: #75715e; } /* Comment.Preproc */
-  .highlight .c1 { color: #75715e; } /* Comment.Single */
-  .highlight .cs { color: #75715e; } /* Comment.Special */
+  .highlight .cm { color: rgb(44, 152, 9); } /* Comment.Multiline */
+  .highlight .cp { color: rgb(44, 152, 9); } /* Comment.Preproc */
+  .highlight .c1 { color: rgb(44, 152, 9); } /* Comment.Single */
+  .highlight .cs { color: rgb(44, 152, 9); } /* Comment.Special */
   .highlight .ge { color: inherit; font-style: italic; } /* Generic.Emph */
   .highlight .gs { font-weight: bold; } /* Generic.Strong */
   .highlight .kc { color: #66d9ef; } /* Keyword.Constant */
@@ -73,7 +73,7 @@
   --highlight-bg-color: #010103;
   --highlighter-rouge-color: #e3eb06;
   --highlight-lineno-color: #f5f5fa;
-  --inline-code-bg: #b67fe4;
+  --inline-code-bg: #310753;
   --code-header-text-color: #faf7f7;
   --code-header-muted-color: rgb(134, 78, 232);
   --code-header-icon-color: rgb(249, 244, 244);
