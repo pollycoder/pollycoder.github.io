@@ -6,6 +6,8 @@ order: 4
 
 <font color=pink><big><b>This is Polly's mind palace, mainly for tech-notes taking and sharing.</b></big></font>
 
+For Polly's daily thoughts, please go to <a href="https://blog.polly-mindpalace.xyz/paradise.github.io">Polly's Paradise</a> to read my thoughts.
+
 ### About Polly:
 
 An undergraduate student from Tsinghua University TEEP (Tsien Excellence in Education Program) . 
