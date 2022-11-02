@@ -76,7 +76,7 @@ ROS: ★★☆☆☆
  ★★★★★:	I am the EXPERT!!!!!!!!!!!<br>
 {: .prompt-tip }
 
-&emsp;&emsp;<font color=LightSkyBlue>As a college student majored in mechanism, I am not quite good at computer technology as those majored in CS, but it is my important hobby. Welcome to my blog! If you have any thoughts or advice, feel free to comment below my posts. Your ideas are very valuable for my improvement ! </font>
+&emsp;&emsp;<font color=LightSkyBlue>As a college student majored in mechanism, I am not quite good at computer technology as those majored in CS, but it is my important hobby. Welcome to my blog! If you have any thoughts or advice, feel free to comment below my posts. Your idea is very valuable for my improvement ! </font>
 
 &emsp;&emsp;<font color=LightSkyBlue>However, to build a harmonious blog environment, there are still some rules in Polly's Mind Palace. These  are listed below:</font>
 
