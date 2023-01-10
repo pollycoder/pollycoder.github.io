@@ -23,4 +23,15 @@ gem "webrick", "~> 1.7"
 
 
 # Add sitemap
-gem 'jekyll-sitemap'
+#gem 'jekyll-sitemap'
+
+source 'https://rubygems.org'
+
+gem 'jekyll'
+
+group :jekyll_plugins do
+  gem 'jekyll-sitemap'
+  gem 'jekyll-feed'
+  gem 'jekyll-seo-tag'
+end
+
