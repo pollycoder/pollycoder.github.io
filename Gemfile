@@ -23,7 +23,7 @@ gem "webrick", "~> 1.7"
 
 
 # Add plugins
-gem "jekyll-sitemap"
-gem "jekyll-feed"
-gem "jekyll-seo-tag"
+gem 'jekyll-sitemap', group: :jekyll-plugins
+gem 'jekyll-feed', group: :jekyll-plugins
+gem 'jekyll-seo-tag', group: :jekyll-plugins
 
