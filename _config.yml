@@ -32,7 +32,6 @@ description: >-                        # used by seo meta and the atom feed
 url: 'https://pollycoder.github.io'
 plugins:
   - jekyll-sitemap
-  - jekyll-seo-tag
 
 
 github:
