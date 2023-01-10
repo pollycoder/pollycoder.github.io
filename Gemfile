@@ -23,4 +23,4 @@ gem "webrick", "~> 1.7"
 
 
 # Add plugins
-gem 'jekyll-sitemap'
+gem "jekyll-sitemap"
