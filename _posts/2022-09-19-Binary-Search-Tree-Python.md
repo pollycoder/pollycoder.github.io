@@ -6,7 +6,6 @@ tags: [DSA]
 author: Polly
 math: true
 mermaid: true
-pin: true
 ---
 
 # Original Problem
